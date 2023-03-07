@@ -57,6 +57,7 @@ class Mouse_Controller
         if args.inputs.keyboard.key_held.shift
           unit.destination << destination
         else
+          unit.destination = []
           unit.destination[0] = destination
         end
         unit.commands.unshift(command)
